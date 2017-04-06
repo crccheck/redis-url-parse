@@ -23,6 +23,9 @@ redisUrlParse('redis://example.com:39143/')
 
 redisUrlParse('redis://:n9y25ah7@example.com:39143/')
 //=> {host: 'example.com', port: 39143, database: '0', password: 'n9y25ah7'}
+
+redisUrlParse('redis://user:hunter2@example.com:39143/')
+//=> {host: 'example.com', port: 39143, database: '0', password: 'hunter2'}
 ```
 
 
@@ -31,8 +34,7 @@ Complete example
 
 ```
 const redisUrlParse = require('redis-url-parse')
-
-redisUrlParse(process.env.REDIS_URL)
+redisUrlParse(process.env.REDIS_URL)  // redis://
 //=> {host: 'localhost', port: 6379, database: '0', password: null}
 ```
 
