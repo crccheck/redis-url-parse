@@ -1,6 +1,6 @@
 {
   "name": "redis-url-parse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Spread a Redis URL string into a configuration object.",
   "main": "index.js",
   "scripts": {
