@@ -1,5 +1,5 @@
 // @flow
-const urlParse = require('url').parse;
+const urlParse = require('url').parse
 
 /*:: type RedisConfig = {
   host: string,
@@ -9,7 +9,7 @@ const urlParse = require('url').parse;
 } */
 
 module.exports = (url/*: string */)/*: RedisConfig */ => {
-  const redisConfig = urlParse(url);
+  const redisConfig = urlParse(url)
   return {
     host: redisConfig.hostname || 'localhost',
     port: Number(redisConfig.port || 6379),
