@@ -6,5 +6,6 @@ module.exports = (url) => {
     host: redisConfig.hostname || 'localhost',
     port: redisConfig.port || 6379,
     database: (redisConfig.pathname || '/0').substr(1) || '0',
+    password: redisConfig.auth && redisConfig.auth.substr(1)
   }
 }
