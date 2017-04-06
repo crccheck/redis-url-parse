@@ -1,0 +1,16 @@
+{
+  "name": "redis-url-parse",
+  "version": "1.0.0",
+  "description": "Spread a Redis URL string into a configuration object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "readme-assert",
+    "tdd": "nodemon -e js,md -x node_modules/.bin/readme-assert"
+  },
+  "keywords": ["redis"],
+  "author": "Chris Chang <c@crccheck.com> (http://crccheck.com/blog)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "readme-assert": "^5.0.2"
+  }
+}
