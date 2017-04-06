@@ -1,7 +1,7 @@
 Redis URL Parse
 ===============
 
-Spread a Redis url string into a configuration object.
+Spread a Redis URL string into a configuration object.
 
 Module usage
 ------------
@@ -32,3 +32,7 @@ redisParser(process.env.REDIS_URL)
 
 Prior art
 ---------
+
+* [parse-redis-url](https://github.com/laggyluke/node-parse-redis-url) not maintained and has an extremely awkward interface `require('parse-redis-url')(null).parse(url)`
+* [redis-url](https://github.com/ddollar/redis-url) not maintained and requires `redis` as a requirement
+* [redis-url-parser](https://github.com/cilindrox/redis-url-parser) not maintained and only works if your URL has a password
