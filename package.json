@@ -7,10 +7,24 @@
     "test": "readme-assert",
     "tdd": "nodemon -e js,md -x node_modules/.bin/readme-assert"
   },
-  "keywords": ["redis"],
+  "keywords": [
+    "redis"
+  ],
+  "engines": {
+    "node": "^4, ^6, ^7"
+  },
   "author": "Chris Chang <c@crccheck.com> (http://crccheck.com/blog)",
   "license": "Apache-2.0",
   "devDependencies": {
     "readme-assert": "^5.0.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crccheck/redis-url-parse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crccheck/redis-url-parse/issues"
+  },
+  "homepage": "https://github.com/crccheck/redis-url-parse#readme"
 }
