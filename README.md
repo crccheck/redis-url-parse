@@ -30,9 +30,10 @@ Complete example
 ----------------
 
 ```
-const redisParser = require('redis-url-parse')
+const redisUrlParse = require('redis-url-parse')
 
-redisParser(process.env.REDIS_URL)
+redisUrlParse(process.env.REDIS_URL)
+//=> {host: 'localhost', port: 6379, database: '0', password: null}
 ```
 
 
