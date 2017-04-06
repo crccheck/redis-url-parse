@@ -1,6 +1,8 @@
 Redis URL Parse
 ===============
 
+[![Build Status](https://travis-ci.org/crccheck/redis-url-parse.svg?branch=master)](https://travis-ci.org/crccheck/redis-url-parse)
+
 Spread a Redis URL string into a configuration object.
 
 Module usage
