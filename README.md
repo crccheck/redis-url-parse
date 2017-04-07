@@ -13,13 +13,13 @@ Module usage
 const redisUrlParse = require('redis-url-parse')
 
 redisUrlParse('redis://')
-//=> {host: 'localhost', port: 6379, database: '0', password: null}
+//=> {host: 'localhost', port: 6379, database: '0', password: undefined}
 
 redisUrlParse('redis:///1')
-//=> {host: 'localhost', port: 6379, database: '1', password: null}
+//=> {host: 'localhost', port: 6379, database: '1', password: undefined}
 
 redisUrlParse('redis://example.com:39143/')
-//=> {host: 'example.com', port: 39143, database: '0', password: null}
+//=> {host: 'example.com', port: 39143, database: '0', password: undefined}
 
 redisUrlParse('redis://:n9y25ah7@example.com:39143/')
 //=> {host: 'example.com', port: 39143, database: '0', password: 'n9y25ah7'}
@@ -35,7 +35,7 @@ Complete example
 ```
 const redisUrlParse = require('redis-url-parse')
 redisUrlParse(process.env.REDIS_URL)  // redis://
-//=> {host: 'localhost', port: 6379, database: '0', password: null}
+//=> {host: 'localhost', port: 6379, database: '0', password: undefined}
 ```
 
 
