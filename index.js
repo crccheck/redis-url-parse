@@ -14,6 +14,6 @@ module.exports = (url/*: string */)/*: RedisConfig */ => {
     host: redisConfig.hostname || 'localhost',
     port: Number(redisConfig.port || 6379),
     database: (redisConfig.pathname || '/0').substr(1) || '0',
-    password: redisConfig.auth && redisConfig.auth.split(':')[1]
+    password: redisConfig.auth && redisConfig.auth.split(':')[1] || undefined
   }
 }
