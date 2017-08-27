@@ -1,6 +1,8 @@
 Redis URL Parse
 ===============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/crccheck/redis-url-parse.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/crccheck/redis-url-parse.svg?branch=master)](https://travis-ci.org/crccheck/redis-url-parse)
 [![npm version](https://badge.fury.io/js/redis-url-parse.svg)](https://badge.fury.io/js/redis-url-parse)
 
