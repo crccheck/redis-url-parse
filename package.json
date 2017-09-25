@@ -17,7 +17,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "flow-bin": "^0.55.0",
-    "readme-assert": "^5.0.2"
+    "readme-assert": "^5.0.6"
   },
   "dependencies": {},
   "repository": {
