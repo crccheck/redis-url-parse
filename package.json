@@ -16,7 +16,7 @@
   "author": "Chris Chang <c@crccheck.com> (http://crccheck.com/blog)",
   "license": "Apache-2.0",
   "devDependencies": {
-    "flow-bin": "^0.55.0",
+    "flow-bin": "^0.60.0",
     "readme-assert": "^5.0.6"
   },
   "dependencies": {},
