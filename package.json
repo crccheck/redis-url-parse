@@ -11,7 +11,7 @@
     "redis, 12factor, dsn"
   ],
   "engines": {
-    "node": ">6"
+    "node": ">=6.13.0"
   },
   "author": "Chris Chang <c@crccheck.com> (http://crccheck.com/blog)",
   "license": "Apache-2.0",
