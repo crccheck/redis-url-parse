@@ -31,6 +31,10 @@ redisUrlParse('redis://:n9y25ah7@example.com:39143/')
 // If you add a username, it's ignored
 redisUrlParse('redis://user:hunter2@example.com:39143/')
 //=> {host: 'example.com', port: 39143, database: '0', password: 'hunter2'}
+
+// If your password uses special characters, you may need to URI encode it
+redisUrlParse('redis://:my%3Asuper%21secure%3Fpassword@example.com:39143/')
+//=> {host: 'example.com', port: 39143, database: '0', password: 'my:super!secure?password'}
 ```
 
 
