@@ -1,19 +1,21 @@
 // @flow
-const urlParse = require('url').parse
+const { URL } = require('url')
 
-/*:: type RedisConfig = {
+/*::
+type RedisConfig = {
   host: string,
   port: number,
   database: string,
-  password: ?string
-} */
+  password: ?string,
+}
+*/
 
 module.exports = (url/*: string */)/*: RedisConfig */ => {
-  const redisConfig = urlParse(url)
+  const parsedURL = new URL(url)
   return {
-    host: redisConfig.hostname || 'localhost',
-    port: Number(redisConfig.port || 6379),
-    database: (redisConfig.pathname || '/0').substr(1) || '0',
-    password: redisConfig.auth && redisConfig.auth.split(':')[1] || undefined
+    host: parsedURL.hostname || 'localhost',
+    port: Number(parsedURL.port || 6379),
+    database: (parsedURL.pathname || '/0').substr(1) || '0',
+    password: parsedURL.password ? decodeURIComponent(parsedURL.password) : null
   }
 }
