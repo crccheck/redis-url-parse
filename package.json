@@ -8,7 +8,7 @@
     "tdd": "nodemon -e js,md -x node_modules/.bin/readme-assert"
   },
   "keywords": [
-    "redis, 12factor, dsn"
+    "redis", "12factor", "dsn"
   ],
   "engines": {
     "node": ">=6.13.0"
