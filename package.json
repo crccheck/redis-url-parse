@@ -8,10 +8,10 @@
     "tdd": "nodemon -e js,md -x node_modules/.bin/readme-assert"
   },
   "keywords": [
-    "redis"
+    "redis, 12factor, dsn"
   ],
   "engines": {
-    "node": "^4, ^6, ^7"
+    "node": ">6"
   },
   "author": "Chris Chang <c@crccheck.com> (http://crccheck.com/blog)",
   "license": "Apache-2.0",
